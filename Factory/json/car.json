@@ -1,0 +1,23 @@
+{
+    "json": 
+    [
+        {
+            "title": "Mazda 正式公佈最新汽油引擎 SKYACTIV-X！省油效率比柴油還強！",
+            "summary": "先前傳得沸沸揚揚的 Mazda 新一代引擎，今天由官方自己正式宣布，新一代的汽油引擎技術，名為 SKYACTIV-X",
+            "type": "auto",
+            "content": "http://app.ltn.com.tw/autoapi/v5/content?no=8188"
+        },
+        {
+            "title": "開著一間套房在街上跑！McLaren 720S 超跑還是讓車主排隊也要等到（內有影音）",
+            "summary": "超跑品牌 McLaren，今天由台灣總代理永三汽車宣布推出 Super Series 的 720S，這也是 Super Series 的第二代成員，標配售價從....",
+            "type": "auto",
+            "content": "http://app.ltn.com.tw/autoapi/v5/content?no=8197"
+        },
+        {
+            "title": "6 氣囊終於出現！ Honda Fit 新年式預售價公布",
+            "summary": "Honda 推出五門掀背小車代表 Fit 的小改款，在原有的大空間、搶眼外觀、優異操控性基礎下，新增多項主動安全配備...",
+            "type": "auto",
+            "content": "http://app.ltn.com.tw/autoapi/v5/content?no=8210"
+        }
+    ]
+}
