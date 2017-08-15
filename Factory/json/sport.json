@@ -1,0 +1,23 @@
+{
+    "json": 
+    [
+        {
+            "title": "恰恰「千打點」紀錄夜 兄弟中止5連敗",
+            "summary": "",
+            "type": "sports",
+            "content": "http://app.ltn.com.tw/sportsapi/v5/content?type=&group=breakingnews&no=2163596"
+          },
+          {
+            "title": "連續5場「摃龜」後 恰恰千打點終於達標",
+            "summary": "",
+            "type": "sports",
+            "content": "http://app.ltn.com.tw/sportsapi/v5/content?type=&group=breakingnews&no=2164124"
+          },
+          {
+            "title": "9下驚險關門 世大運1分險勝港口盃",
+            "summary": "",
+            "type": "sports",
+            "content": "http://app.ltn.com.tw/sportsapi/v5/content?type=&group=breakingnews&no=2163703"
+          }
+    ]
+}

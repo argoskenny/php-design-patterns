@@ -10,8 +10,7 @@ class Plusmethod extends AbstractMethod
 		$this->num2 = $num2;
 	}
 
-	public function compute()
-	{
+	public function compute() {
 		return $this->num1 + $this->num2;
 	}
 }

@@ -2,8 +2,7 @@
 
 class Calculator {
 
-	function compute($method, $num1, $num2)
-	{
+	function compute($method, $num1, $num2) {
 		switch ($method) {
 			case '+':
 			return $num1 + $num2;
