@@ -13,6 +13,7 @@
 
     // $newsParser->parser("style", "hot");
     // $newsParser->parser("style", "list");
+    
     $carParser = new CarNewsFactory($url);
     $carParser->parseBySection("hot");
     $carParser->parseBySection("list");
