@@ -5,18 +5,20 @@ require dirname(__FILE__).'/../abstractJsonParser.php';
 require dirname(__FILE__).'/carNewsHotParser.php';
 require dirname(__FILE__).'/carNewsListParser.php';
 
-class CarNewsFactory extends AbstractFactoryMethod {
-
+class CarNewsFactory extends AbstractFactoryMethod 
+{
     private $jsonData;
     private $jsonParser;
     
-    public function __construct($url) {
+    public function __construct($url) 
+    {
         $content = file_get_contents($url);
         $results = json_decode($content, true);
         $this->jsonData = $results["json"];
     }
 
-    public function parseBySection($section) {
+    public function parseBySection($section) 
+    {
         switch ($section) {
             case "hot":
                 $this->jsonParser = new CarNewsHotParser();
@@ -31,5 +33,3 @@ class CarNewsFactory extends AbstractFactoryMethod {
         $this->jsonParser->parse($this->jsonData);
     }
 }
-
-?>

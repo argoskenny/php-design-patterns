@@ -5,9 +5,10 @@ require 'plusmethod.php';
 require 'minusmethod.php';
 require 'multiplymethod.php';
 
-class CalculatorSimpleFactory {
-
-	public static function selectMethod($method, $num1, $num2) {
+class CalculatorSimpleFactory 
+{
+    public static function selectMethod($method, $num1, $num2) 
+    {
         switch ($method) {
             case '+':
                 return new Plusmethod($num1, $num2);

@@ -1,5 +1,6 @@
 <?php
 
-abstract class AbstractJsonParser {
+abstract class AbstractJsonParser 
+{
     public abstract function parse($jsonData);
 }

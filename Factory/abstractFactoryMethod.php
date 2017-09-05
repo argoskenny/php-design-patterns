@@ -1,5 +1,6 @@
 <?php
 
-abstract class AbstractFactoryMethod {
+abstract class AbstractFactoryMethod 
+{
     public abstract function parseBySection($section);
 }

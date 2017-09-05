@@ -1,4 +1,5 @@
 <?php
-abstract class AbstractMethod {
+abstract class AbstractMethod 
+{
 	public abstract function compute();
 }
