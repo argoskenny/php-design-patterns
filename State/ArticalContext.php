@@ -2,33 +2,73 @@
 
 class ArticalContext
 {
+    private $articalState;
 
-    private $state;
+    private $statusTag;
+    private $titleDisable;
+    private $contentDisable;
+    private $editButtonDisable;
+    private $completeButtonDisable;
+    private $publishButtonDisable;
 
-    function setArticalState() {
-        
+    public function __construct($state) {
+        switch ($state) {
+            case 'edit':
+            $this->articalState = new EditState($this);
+                break;
+            case 'complete':
+            $this->articalState = new CompleteState($this);
+                break;
+            case 'publish':
+            $this->articalState = new PublishState($this);
+                break;
+            default:
+            $this->articalState = new EditState($this);
+                break;
+        }
     }
 
-    public function getAuthor()
+    public function setStatusTag($tag)
     {
-        # code...
+        $this->statusTag = $tag;
     }
 
-    public function getTitle()
+    public function setDisable($title, $content, $editButton, $completeButton, $publishButton)
     {
-        # code...
+        $this->titleDisable = $title;
+        $this->contentDisable = $content;
+        $this->editButtonDisable = $editButton;
+        $this->completeButtonDisable = $completeButton;
+        $this->publishButtonDisable = $publishButton;
     }
 
-    public function getArtical()
+    public function getStatusTag()
     {
-        # code...
+        echo $this->statusTag;
     }
 
-    public function getDate()
+    public function getTitleDisable()
     {
-        # code...
+        echo $this->titleDisable;
+    }
+
+    public function getContentDisable()
+    {
+        echo $this->contentDisable;
+    }
+
+    public function getEditButtonDisable()
+    {
+        echo $this->editButtonDisable;
+    }
+
+    public function getCompleteButtonDisable()
+    {
+        echo $this->completeButtonDisable;
+    }
+
+    public function getPublishButtonDisable()
+    {
+        echo $this->publishButtonDisable;
     }
 }
-
-
-?>
