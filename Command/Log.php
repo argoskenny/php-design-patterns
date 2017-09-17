@@ -2,14 +2,14 @@
 class Log
 {
     public function detectError() {
-        echo "somthing broke";
+        echo "somthing broke<br>";
     }
 
     public function saveToLogFile() {
-        echo "save";
+        echo "save<br>";
     }
 
     public function showLog() {
-        echo "error message";
+        echo "error message<br>";
     }
 }
