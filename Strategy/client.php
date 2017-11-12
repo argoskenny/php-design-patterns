@@ -19,6 +19,7 @@ $sportHtmlMaker = new SportHtmlMaker(new HotNewsDBHtmlMaker());
 $sportHtmlMaker->makeHeader();
 $sportHtmlMaker->makeContent();
 $sportHtmlMaker->makeFooter();
+$sportHtmlMaker->makeHtmlFromDB();
 
 $styleHtmlMaker = new StyleHtmlMaker(new OtherNewsDBHtmlMaker());
 $styleHtmlMaker->makeHeader();
