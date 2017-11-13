@@ -6,7 +6,6 @@ abstract class MenuComposite
 
 class Item extends MenuComposite
 {
-
     private $name;
     private $price;
 
