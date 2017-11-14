@@ -6,8 +6,7 @@
 // 違反 OCP
 class SteelWheel
 {
-    function setWheel()
-    {
+    function setWheel() {
         echo "裝上輪胎<br>";
     }
 }
@@ -16,8 +15,7 @@ class Bus
 {
     private $steelWheel;
 
-    function __construct()
-    {
+    function __construct() {
         $this->steelWheel = new SteelWheel();
         $this->steelWheel->setWheel();
     }
@@ -36,8 +34,7 @@ abstract class Wheel
 class WoodWheel extends Wheel
 {
 
-    function setWheel()
-    {
+    function setWheel() {
         echo "裝上木造輪胎<br>";
     }
 }
@@ -45,8 +42,7 @@ class WoodWheel extends Wheel
 class ToyWheel extends Wheel
 {
 
-    function setWheel()
-    {
+    function setWheel() {
         echo "裝上玩具輪胎<br>";
     }
 }
@@ -55,8 +51,7 @@ class Car
 {
     private $wheel;
 
-    function __construct(Wheel $wheel)
-    {
+    function __construct(Wheel $wheel) {
         $this->wheel = $wheel;
         $this->wheel->setWheel();
     }

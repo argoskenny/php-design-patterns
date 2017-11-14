@@ -15,18 +15,15 @@ interface ATM
 class WebATM implements ATM
 {
 
-    function showControlPannel()
-    {
+    function showControlPannel() {
         echo "顯示操作視窗";
     }
 
-    function showTransactionConfirm()
-    {
+    function showTransactionConfirm() {
         echo "顯示交易確認視窗";
     }
 
-    function ejectCard()
-    {
+    function ejectCard() {
         // ???
     }
 }
@@ -48,13 +45,11 @@ interface BankMaching
 class BankWebsite implements UI
 {
 
-    function showControlPannel()
-    {
+    function showControlPannel() {
         echo "顯示操作視窗";
     }
 
-    function showTransactionConfirm()
-    {
+    function showTransactionConfirm() {
         echo "顯示交易確認視窗";
     }
 }
@@ -62,18 +57,15 @@ class BankWebsite implements UI
 class BankATM implements UI, BankMaching
 {
 
-    function showControlPannel()
-    {
+    function showControlPannel() {
         echo "顯示操作視窗";
     }
 
-    function showTransactionConfirm()
-    {
+    function showTransactionConfirm() {
         echo "顯示交易確認視窗";
     }
 
-    function ejectCard()
-    {
+    function ejectCard() {
         echo "退出卡片";
     }
 }

@@ -6,23 +6,19 @@
 // 違反 SRP
 class Modem {
 
-    function dial($number)
-    {
+    function dial($number) {
         // 連線
     }
 
-    function hangup()
-    {
+    function hangup() {
         // 斷縣
     }
 
-    function sendData()
-    {
+    function sendData() {
         // 傳送資料
     }
 
-    function receiveData()
-    {
+    function receiveData() {
         // 接受資料
     }
 }
@@ -42,23 +38,19 @@ interface DataHandler {
 
 class NewModem implements Connection, DataHandler {
 
-    function dial($number)
-    {
+    function dial($number) {
         // 連線
     }
 
-    function hangup()
-    {
+    function hangup() {
         // 斷線
     }
 
-    function sendData()
-    {
+    function sendData() {
         // 送資料
     }
 
-    function receiveData()
-    {
+    function receiveData() {
         // 接資料
     }
 }

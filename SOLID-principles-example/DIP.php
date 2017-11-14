@@ -6,18 +6,15 @@
 // 違反 DIP
 class PlayStation
 {
-    function powerOn()
-    {
+    function powerOn() {
         echo "開主機";
     }
 
-    function powerOff()
-    {
+    function powerOff() {
         echo "關主機";
     }
 
-    function play($disk)
-    {
+    function play($disk) {
         echo "玩遊戲".$disk;
     }
 }
@@ -26,13 +23,11 @@ class SonyFanBoy
 {
     private $playStation;
 
-    function __construct()
-    {
+    function __construct() {
         $this->playStation = new PlayStation();
     }
 
-    function haveFun()
-    {
+    function haveFun() {
         $this->playStation->powerOn();
         $this->playStation->play("勇者鬥惡龍<br>");
     }
@@ -44,8 +39,7 @@ $people->haveFun();
 
 
 // 符合 DIP
-abstract class GamingMachine
-{
+abstract class GamingMachine {
     abstract function play();
 }
 
@@ -59,16 +53,14 @@ class XBoxOne extends GamingMachine
 
 class PlayStation4 extends GamingMachine
 {
-    function play()
-    {
+    function play() {
         echo "開主機玩太空戰士<br>";
     }
 }
 
 class PC extends GamingMachine
 {
-    function play()
-    {
+    function play() {
         echo "開電腦玩踩地雷<br>";
     }
 }
@@ -77,13 +69,11 @@ class HappyMan
 {
     private $gamingMachine;
 
-    function __construct(GamingMachine $gamingMachine)
-    {
+    function __construct(GamingMachine $gamingMachine) {
         $this->gamingMachine = $gamingMachine;
     }
 
-    function haveFun()
-    {
+    function haveFun() {
         $this->gamingMachine->play();
     }
 }
