@@ -28,13 +28,11 @@ class ArticalContext
         }
     }
 
-    public function setStatusTag($tag)
-    {
+    public function setStatusTag($tag) {
         $this->statusTag = $tag;
     }
 
-    public function setDisable($title, $content, $editButton, $completeButton, $publishButton)
-    {
+    public function setDisable($title, $content, $editButton, $completeButton, $publishButton) {
         $this->titleDisable = $title;
         $this->contentDisable = $content;
         $this->editButtonDisable = $editButton;
@@ -42,33 +40,27 @@ class ArticalContext
         $this->publishButtonDisable = $publishButton;
     }
 
-    public function getStatusTag()
-    {
+    public function getStatusTag() {
         echo $this->statusTag;
     }
 
-    public function getTitleDisable()
-    {
+    public function getTitleDisable() {
         echo $this->titleDisable;
     }
 
-    public function getContentDisable()
-    {
+    public function getContentDisable() {
         echo $this->contentDisable;
     }
 
-    public function getEditButtonDisable()
-    {
+    public function getEditButtonDisable() {
         echo $this->editButtonDisable;
     }
 
-    public function getCompleteButtonDisable()
-    {
+    public function getCompleteButtonDisable() {
         echo $this->completeButtonDisable;
     }
 
-    public function getPublishButtonDisable()
-    {
+    public function getPublishButtonDisable() {
         echo $this->publishButtonDisable;
     }
 }

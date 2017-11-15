@@ -2,8 +2,7 @@
 
 class News
 {
-    public static function printHotNews()
-    {
+    public static function printHotNews() {
         $carNews = new CarNews();
         $sportNews = new SportNews();
         $fashionNews = new FashionNews();

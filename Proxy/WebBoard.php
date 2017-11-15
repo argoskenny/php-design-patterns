@@ -10,14 +10,12 @@ class ServerLog extends WebBoard
 
     private $log;
 
-    public function getLog()
-    {
+    public function getLog() {
         echo "Collection Server Log<br>";
         $this->log = "Log messages<br>";
     }
 
-    public function showLog()
-    {
+    public function showLog() {
         echo $this->log;
     }
 }
@@ -26,14 +24,12 @@ class ServerLogProxy extends WebBoard
 {
     private $serverLog;
 
-    public function getLog()
-    {
+    public function getLog() {
         $this->serverLog = new ServerLog();
         $this->serverLog->getLog();
     }
 
-    public function showLog()
-    {
+    public function showLog() {
         $this->serverLog->showLog();
     }
 }

@@ -10,15 +10,13 @@ class CarNewsFactory extends AbstractFactoryMethod
     private $jsonData;
     private $jsonParser;
     
-    public function __construct($url) 
-    {
+    public function __construct($url) {
         $content = file_get_contents($url);
         $results = json_decode($content, true);
         $this->jsonData = $results["json"];
     }
 
-    public function parseBySection($section) 
-    {
+    public function parseBySection($section) {
         switch ($section) {
             case "hot":
                 $this->jsonParser = new CarNewsHotParser();

@@ -4,13 +4,11 @@ class NewsParser
 {
     private $jsonFilePath;
     
-    public function __construct($jsonFilePath) 
-    {
+    public function __construct($jsonFilePath) {
         $this->jsonFilePath = $jsonFilePath;
     }
 
-    public function parser($channel, $section) 
-    {
+    public function parser($channel, $section) {
         $news = $this->parseJsonToArray($this->jsonFilePath);
         switch ($channel) {
             case 'car':
@@ -28,15 +26,13 @@ class NewsParser
         }
     }
 
-    private function parseJsonToArray($jsonFilePath) 
-    {
+    private function parseJsonToArray($jsonFilePath) {
         $contents = file_get_contents($jsonFilePath); 
         $results = json_decode($contents, true);
         return $results["json"];
     }
 
-    private function exportCarNewsToHtml($news, $section) 
-    {
+    private function exportCarNewsToHtml($news, $section) {
         switch ($section) {
             case 'hot':
             foreach ($news as $key => $value) {
@@ -60,8 +56,7 @@ class NewsParser
         }
     }
 
-    private function exportSportNewsToHtml($news, $section)
-    {
+    private function exportSportNewsToHtml($news, $section) {
         switch ($section) {
             case 'hot':
             foreach ($news as $key => $value) {
@@ -85,8 +80,7 @@ class NewsParser
         }
     }
 
-    private function exportStyleNewsToHtml($news, $section)
-    {
+    private function exportStyleNewsToHtml($news, $section) {
         switch ($section) {
             case 'hot':
             foreach ($news as $key => $value) {

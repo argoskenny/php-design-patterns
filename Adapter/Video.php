@@ -6,8 +6,7 @@ class Video
     private $videoClip;
     private $commentList;
 
-    public function loadYouTube()
-    {
+    public function loadYouTube() {
         $this->videoTitle = "世大運精華片段";
         $this->videoContent = "2017台北世大運8/19登場！世界150國好手齊聚一堂於8/19至8/30一拼高下、奪金牌";
         $this->videoClip = "sportClip.mp4";

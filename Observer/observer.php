@@ -6,8 +6,7 @@ abstract class AbstractObserver
 
 class DatabaseObserver extends AbstractObserver 
 {
-    public function update(AbstractSubject $subject) 
-    {
+    public function update(AbstractSubject $subject) {
         echo "<h1>[" . $subject->getFeedback() . "]</h1>";
         echo "<h3>Save feedback to database.</h3>";
         echo "<hr>";
@@ -16,8 +15,7 @@ class DatabaseObserver extends AbstractObserver
 
 class AdminPageObserver extends AbstractObserver 
 {
-    public function update(AbstractSubject $subject) 
-    {
+    public function update(AbstractSubject $subject) {
         echo "<h1>[" . $subject->getFeedback() . "]</h1>";
         echo "<h3>Show feedback on Admin Page.</h3>";
         echo "<hr>";

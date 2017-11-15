@@ -1,0 +1,12 @@
+{
+    "log": [
+        {
+            "time": "20171010",
+            "error": "System fatal error"
+        },
+        {
+            "time": "20171111",
+            "error": "File system error"
+        }
+    ]
+}

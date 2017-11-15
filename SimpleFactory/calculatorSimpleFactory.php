@@ -7,8 +7,7 @@ require 'multiplymethod.php';
 
 class CalculatorSimpleFactory 
 {
-    public static function selectMethod($method, $num1, $num2) 
-    {
+    public static function selectMethod($method, $num1, $num2) {
         switch ($method) {
             case '+':
                 return new Plusmethod($num1, $num2);

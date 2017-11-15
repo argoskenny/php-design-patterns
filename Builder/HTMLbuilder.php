@@ -9,18 +9,15 @@ abstract class HTMLbuilder
 class NewsBuilder extends HTMLbuilder
 {
 
-    public function makeHeader()
-    {
+    public function makeHeader() {
         echo '<h1>This is header.</h1>';
     }
 
-    public function makeContent()
-    {
+    public function makeContent() {
         echo '<div>This is content.</div>';
     }
 
-    public function makeFooter()
-    {
+    public function makeFooter() {
         echo '<hr>';
         echo '<div>This is footer.</div>';
     }
@@ -29,18 +26,15 @@ class NewsBuilder extends HTMLbuilder
 class ContentBuilder extends HTMLbuilder
 {
 
-    public function makeHeader()
-    {
+    public function makeHeader() {
         echo '<div style="background-color: black; color: white;">This is header.</div>';
     }
 
-    public function makeContent()
-    {
+    public function makeContent() {
         echo '<div style="background-color: darkslategrey; color: white;">This is content.</div>';
     }
 
-    public function makeFooter()
-    {
+    public function makeFooter() {
         echo '<div style="background-color: black; color: white;">This is footer.</div>';
     }
 }
@@ -49,13 +43,11 @@ class HTMLDirector
 {
     private $htmlBuilder;
 
-    public function __construct(HTMLbuilder $htmlBuilder)
-    {
+    public function __construct(HTMLbuilder $htmlBuilder) {
         $this->htmlBuilder = $htmlBuilder;
     }
 
-    public function buildPage()
-    {
+    public function buildPage() {
         $this->htmlBuilder->makeHeader();
         $this->htmlBuilder->makeContent();
         $this->htmlBuilder->makeFooter();

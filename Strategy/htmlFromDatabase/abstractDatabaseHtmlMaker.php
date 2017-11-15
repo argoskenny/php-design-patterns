@@ -1,6 +1,7 @@
 
 <?php
-abstract class AbstractDatabaseHtmlMaker {
+abstract class AbstractDatabaseHtmlMaker 
+{
     public abstract function fetchData();
     public abstract function makeHtml();
 }

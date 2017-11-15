@@ -4,8 +4,7 @@ include 'News.php';
 
 class PrintNews 
 {
-    public function __construct(News $news) 
-    {
+    public function __construct(News $news) {
         $news->loadData();
         $title = $news->getTitle();
         $content = $news->getContent();
