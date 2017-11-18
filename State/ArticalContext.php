@@ -1,5 +1,4 @@
 <?php
-
 class ArticalContext
 {
     private $articalState;

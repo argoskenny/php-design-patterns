@@ -1,10 +1,4 @@
 <?php
-
-require 'abstractMethod.php';
-require 'plusmethod.php';
-require 'minusmethod.php';
-require 'multiplymethod.php';
-
 class CalculatorSimpleFactory 
 {
     public static function selectMethod($method, $num1, $num2) {
@@ -24,5 +18,3 @@ class CalculatorSimpleFactory
         }
     }
 }
-
-?>

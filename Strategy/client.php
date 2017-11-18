@@ -1,13 +1,6 @@
 <?php
-
-include 'abstractHtmlMaker.php';
-include 'carHtmlMaker.php';
-include 'sportHtmlMaker.php';
-include 'styleHtmlMaker.php';
-
-include 'htmlFromDatabase/abstractDatabaseHtmlMaker.php';
-include 'htmlFromDatabase/hotNewsDBHtmlMaker.php';
-include 'htmlFromDatabase/otherNewsDBHtmlMaker.php';
+include 'HtmlMaker.php';
+include 'DatabaseHtmlMaker.php';
 
 $carHtmlMaker = new carHtmlMaker(new HotNewsDBHtmlMaker());
 $carHtmlMaker->makeHeader();
