@@ -28,8 +28,6 @@ class WebATM implements ATM
     }
 }
 
-
-
 // 符合 ISP
 interface UI
 {

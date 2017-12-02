@@ -36,8 +36,6 @@ class SonyFanBoy
 $people = new SonyFanBoy();
 $people->haveFun();
 
-
-
 // 符合 DIP
 abstract class GamingMachine {
     abstract function play();

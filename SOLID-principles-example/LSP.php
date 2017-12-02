@@ -40,6 +40,7 @@ class Mail extends Article
         $this->content = "這是一封信";
     }
 
+    // weird implement
     function showContent() {
         $to = 'nobody@example.com';
         $subject = '這是一封信';

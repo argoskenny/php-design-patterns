@@ -27,7 +27,6 @@ abstract class NewsMaker
 
 class FashionTheme extends NewsMaker
 {
-
     public function makeHTML($news) {
         foreach ($news as $key => $value) {
             echo "<div style='background: lightGray'>";
@@ -40,7 +39,6 @@ class FashionTheme extends NewsMaker
 
 class DarkTheme extends NewsMaker
 {
-
     public function makeHTML($news) {
         foreach ($news as $key => $value) {
             echo "<div style='background: black'>";

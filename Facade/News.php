@@ -1,5 +1,4 @@
 <?php
-
 class News
 {
     public static function printHotNews() {

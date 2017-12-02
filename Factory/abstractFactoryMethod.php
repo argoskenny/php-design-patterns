@@ -20,13 +20,13 @@ class CarNewsFactory extends AbstractFactoryMethod
         switch ($section) {
             case "hot":
                 $this->jsonParser = new CarNewsHotParser();
-            break;
+                break;
             case "list":
                 $this->jsonParser = new CarNewsListParser();
-            break;
+                break;
             default:
                 echo "error";
-            break;        
+                break;        
         }
         $this->jsonParser->parse($this->jsonData);
     }

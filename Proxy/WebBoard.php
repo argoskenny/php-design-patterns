@@ -7,7 +7,6 @@ abstract class WebBoard
 
 class ServerLog extends WebBoard
 {
-
     private $log;
 
     public function getLog() {

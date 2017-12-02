@@ -32,6 +32,5 @@ class RemoteLogCommand extends Command
         $this->remoteLog->formateLog();
         $this->remoteLog->sendLog();
         $this->remoteLog->printLog();
-
     }
 }

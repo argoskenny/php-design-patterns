@@ -24,7 +24,6 @@ class Bus
 // Client
 $bus = new Bus();
 
-
 // 符合 OCP
 abstract class Wheel
 {

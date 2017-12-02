@@ -22,7 +22,7 @@ class CarNews extends News
     
     public function getContent() {
         return $this->content;
-	}
+    }
 }
 
 class SportNews extends News
@@ -41,7 +41,7 @@ class SportNews extends News
     
     public function getContent() {
         return $this->content;
-	}
+    }
 }
 
 class VideoAdapter extends News
@@ -53,16 +53,16 @@ class VideoAdapter extends News
     public function __construct(Video $video) {
         $this->videoNews = $video;
     }
-
-	public function loadData() {
+    
+    public function loadData() {
         $this->videoNews->loadYouTube();
     }
     
     public function getTitle() {
         return $this->videoNews->getVideoTitle();
     }
-    
+
     public function getContent() {
         return $this->videoNews->getVideoDetail();
-	}
+    }
 }

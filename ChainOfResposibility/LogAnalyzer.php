@@ -3,8 +3,7 @@ abstract class LogAnalyzer
 {
     protected $nextAnalyzer;
 
-    final public function setAnalyzer(LogAnalyzer $logAnalyzer)
-    {
+    final public function setAnalyzer(LogAnalyzer $logAnalyzer) {
         if ($this->nextAnalyzer == NULL) {
             $this->nextAnalyzer = $logAnalyzer;
         } else {
@@ -12,8 +11,7 @@ abstract class LogAnalyzer
         }
     }
 
-    final public function analyze($file)
-    {
+    final public function analyze($file) {
         $result = $this->process($file);
         if ($result === NULL && $this->nextAnalyzer !== NULL) {
             $result = $this->nextAnalyzer->process($file);
@@ -26,12 +24,14 @@ abstract class LogAnalyzer
 
 class XMLAnalyzer extends LogAnalyzer
 {
-    function process($file)
-    {
+    function process($file) {
+        
         echo 'XML Analyzer->';
+        
         if (file_exists($file) == FALSE) {
             return NULL;
         }
+        
         $xml = @simplexml_load_file($file);
         if ($xml == FALSE) {
             return NULL;
@@ -43,9 +43,9 @@ class XMLAnalyzer extends LogAnalyzer
 
 class JsonAnalyzer extends LogAnalyzer
 {
-    function process($file)
-    {
+    function process($file) {
         echo 'Json Analyzer->';
+        
         if (file_exists($file) == FALSE) {
             return NULL;
         }
@@ -56,12 +56,14 @@ class JsonAnalyzer extends LogAnalyzer
 
 class TxtAnalyzer extends LogAnalyzer
 {
-    function process($file)
-    {
+    function process($file) {
+        
         echo 'Txt Analyzer';
+        
         if (file_exists($file) == FALSE) {
             return NULL;
         }
+
         $txt = file_get_contents($file);
         if ($txt == FALSE) {
             return NULL;

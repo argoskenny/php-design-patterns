@@ -13,16 +13,16 @@ class ArticalContext
     public function __construct($state) {
         switch ($state) {
             case 'edit':
-            $this->articalState = new EditState($this);
+                $this->articalState = new EditState($this);
                 break;
             case 'complete':
-            $this->articalState = new CompleteState($this);
+                $this->articalState = new CompleteState($this);
                 break;
             case 'publish':
-            $this->articalState = new PublishState($this);
+                $this->articalState = new PublishState($this);
                 break;
             default:
-            $this->articalState = new EditState($this);
+                $this->articalState = new EditState($this);
                 break;
         }
     }

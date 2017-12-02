@@ -22,6 +22,7 @@ class Video
     }
 
     public function getVideo() {
+        // Code for getting video
         // fopen($this->videoClip, "r");
         // play($this->videoClip);
     }

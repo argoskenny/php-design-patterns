@@ -4,8 +4,8 @@
 // 說明範例
 
 // 違反 SRP
-class Modem {
-
+class Modem
+{
     function dial($number) {
         // 連線
     }
@@ -23,21 +23,21 @@ class Modem {
     }
 }
 
-
-
 // 符合 SRP
-interface Connection {
+interface Connection
+{
     function dial($number);
     function hangup();
 }
 
-interface DataHandler {
+interface DataHandler
+{
     function sendData();
     function receiveData();
 }
 
-class NewModem implements Connection, DataHandler {
-
+class NewModem implements Connection, DataHandler 
+{
     function dial($number) {
         // 連線
     }
