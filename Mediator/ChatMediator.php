@@ -52,3 +52,28 @@ class RegularUser extends User
     }
 }
 
+class VisitorUser extends User
+{
+    protected $chatMediator;
+    protected $name;
+
+    public function __construct($chatMediator, $userName) {
+        $this->chatMediator = $chatMediator;
+        $this->name = $userName;
+    }
+
+    public function getName() {
+        return $this->name;
+    }
+
+    public function send($message) {
+        echo $this->name . ' does not have authority to send message.<hr>';
+        // $this->chatMediator->sendMessage($message);
+    }
+
+    public function receive($message) {
+        echo $this->name . ' receive message.<br>';
+        echo 'Message: ' . $message . '<br>';
+    }
+}
+
