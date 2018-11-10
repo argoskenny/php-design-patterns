@@ -11,7 +11,7 @@ class Modem
     }
 
     function hangup() {
-        // 斷縣
+        // 斷線
     }
 
     function sendData() {
